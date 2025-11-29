@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h1>Weather App</h1>
+
+		<div class="controls">
+			<input type="text" id="searchInput" placeholder="Search location...">
+			<button id="searchBtn">Search</button>
+
+			<select id="unitSelect">
+				<option value="c">Celsius</option>
+				<option value="f">Fahrenheit</option>
+			</select>
+		</div>
+		
+		<div id="favoritesContainer">
+			<h3>Your Favorites</h3>
+	   		<div id="favoritesList"></div>
+	   </div>
+	</header>
+
+	<main>
+
+		<!-- Current Weather -->
+		<section id="currentWeather" class="card">
+			<h2 id="locationName">—</h2>
+			<img id="weatherIcon" src="" alt="">
+			<p id="temperature">—°</p>
+			<p id="description">—</p>
+
+			<div class="details">
+				<p><strong>Feels like:</strong> <span id="feelsLike">—</span></p>
+				<p><strong>Humidity:</strong> <span id="humidity">—</span></p>
+				<p><strong>Wind:</strong> <span id="windSpeed">—</span></p>
+				<p><strong>Precip:</strong> <span id="precip">—</span></p>
+			</div>
+		</section>
+
+		<!-- 7 Day Forecast -->
+		<section id="weeklyForecast" class="forecast-grid"></section>
+
+		<!-- Hourly Forecast -->
+		<section id="hourlySection">
+			<h3>Hourly Forecast</h3>
+			<div id="hourlyForecast" class="hourly-grid"></div>
+		</section>
+
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
