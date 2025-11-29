@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background: #e8f0ff;
+	padding: 20px;
+	color: #222;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+input, button, select {
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #aaa;
+}
+
+button {
+	background: #4c80ff;
+	color: white;
+	border: none;
+}
+
+.card {
+	background: white;
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#temperature {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.details p {
+	margin: 5px 0;
+}
+
+.forecast-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 10px;
+}
+
+.forecast-item {
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.hourly-grid {
+	display: flex;
+	overflow-x: auto;
+	gap: 10px;
+	padding: 10px 0;
+}
+
+.hour-item {
+	min-width: 70px;
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+
+#favoritesContainer {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#favoritesList {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.favorite-item {
+	background: white;
+	border-radius: 8px;
+	padding: 6px 12px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	transition: 0.2s;
+}
+
+.favorite-item:hover {
+	background: #4c80ff;
+	color: white;
+}
+
+#favBtn {
+	background: gold;
+	border: none;
+	padding: 3px 7px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+}
